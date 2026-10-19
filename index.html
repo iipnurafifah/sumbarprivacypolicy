@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi — Cek Pajak Kendaraan Sumbar</title>
+<meta name="description" content="Kebijakan privasi aplikasi Cek Pajak Kendaraan Sumbar (id.iipnurafifah.cekpajaksumaterabarat).">
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.65;
+    color: #1a1d21;
+    background: #f7f8fa;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  header {
+    background: linear-gradient(135deg, #0b6b4f 0%, #12805e 60%, #1a9b72 100%);
+    color: #fff;
+    padding: 36px 20px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 1.55rem; }
+  header p { margin: 0; opacity: .9; font-size: .95rem; }
+  article {
+    background: #fff;
+    border: 1px solid #e3e6ea;
+    border-radius: 14px;
+    padding: 28px 26px;
+    margin-top: -24px;
+    box-shadow: 0 6px 24px rgba(11, 107, 79, .08);
+  }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; color: #0b6b4f; }
+  h2:first-child { margin-top: 0; }
+  p, li { font-size: 1rem; }
+  ul { padding-left: 22px; }
+  .meta {
+    font-size: .9rem;
+    color: #5b6470;
+    border-bottom: 1px solid #e3e6ea;
+    padding-bottom: 14px;
+    margin-bottom: 6px;
+  }
+  .highlight {
+    background: #eef7f3;
+    border-left: 4px solid #12805e;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 16px 0;
+  }
+  footer {
+    text-align: center;
+    font-size: .85rem;
+    color: #5b6470;
+    margin-top: 28px;
+  }
+  code { background: #eef1f4; padding: 1px 6px; border-radius: 5px; font-size: .92em; }
+  a { color: #0b6b4f; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #12151a; color: #e7eaee; }
+    article { background: #1a1f26; border-color: #2a313a; }
+    h2 { color: #4cc39a; }
+    .meta, footer { color: #98a2ae; }
+    .highlight { background: #173026; border-left-color: #4cc39a; }
+    code { background: #232a33; }
+    a { color: #4cc39a; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Kebijakan Privasi</h1>
+  <p>Cek Pajak Kendaraan Sumbar — versi 1.0.0</p>
+</header>
+<main>
+<article>
+  <p class="meta">
+    Berlaku sejak 18 Oktober 2026 · Aplikasi Android:
+    <code>id.iipnurafifah.cekpajaksumaterabarat</code><br>
+    Dokumen ini menjelaskan bagaimana aplikasi <strong>Cek Pajak Kendaraan Sumbar</strong>
+    menangani informasi Anda. Singkatnya: <strong>aplikasi ini tidak mengumpulkan data pribadi
+    dan tidak memiliki server pengembang.</strong>
+  </p>
+
+  <h2>1. Ringkasan</h2>
+  <div class="highlight">
+    <ul>
+      <li>Tidak ada pendaftaran akun, tidak ada nama/email/telepon yang diminta.</li>
+      <li>Aplikasi menampilkan iklan dari <strong>Google AdMob</strong> (banner &amp; interstitial).
+          Google serta mitranya dapat mengumpulkan ID iklan perangkat (advertising ID) untuk
+          menayangkan dan mengukur iklan, tanpa data identitas dari kami. Lihat bagian 5.</li>
+      <li>Nomor polisi &amp; nomor rangka yang Anda ketik dikirim <strong>hanya sekali</strong>
+          ke server resmi Bapenda Sumatera Barat untuk memproses pengecekan,
+          melalui koneksi terenkripsi HTTPS.</li>
+      <li>Riwayat pengecekan disimpan <strong>hanya di perangkat Anda</strong> dan dapat
+          dihapus kapan saja.</li>
+      <li>Aplikasi tidak meminta izin sensitif (lokasi, kontak, kamera, mikrofon, penyimpanan).</li>
+    </ul>
+  </div>
+
+  <h2>2. Informasi yang diproses</h2>
+  <p><strong>a. Data yang Anda masukkan</strong> (nomor polisi, 5 digit terakhir nomor rangka,
+  dan kode otorisasi bila ada) dikirim ke <code>https://bapenda.sumbarprov.go.id</code>
+  sebagai permintaan pengecekan. Data tersebut <strong>tidak disimpan</strong> oleh pengembang
+  — pengembang tidak memiliki server yang menerima data Anda.</p>
+  <p><strong>b. Riwayat pengecekan</strong> (nomor polisi, merek/tipe kendaraan, tanggal,
+  dan rincian tagihan) disimpan di penyimpanan lokal aplikasi
+  (<em>SharedPreferences</em>) di perangkat Anda, maksimum 25 entri. Riwayat dapat
+  dimatikan atau dikosongkan kapan saja melalui halaman <strong>Riwayat</strong> di aplikasi.
+  Riwayat tidak ikut backup cloud karena <em>backup aplikasi dinonaktifkan</em>.</p>
+  <p><strong>c. Log teknis perangkat.</strong> Aplikasi tidak membuat log pengguna dan tidak
+  mengirimkannya ke mana pun. Sistem operasi Android dapat menampilkan log lokal sesuai
+  kebijakan sistem.</p>
+
+  <h2>3. Untuk apa data dipakai</h2>
+  <ul>
+    <li>Menampilkan hasil pengecekan pajak kendaraan (status pajak, denda, total tagihan).</li>
+    <li>Menyediakan riwayat pengecekan lokal agar Anda dapat mengecek ulang dengan cepat.</li>
+  </ul>
+  <p>Pengembang tidak memakai data yang Anda masukkan untuk pemasaran, profiling, maupun analitik.
+  Iklan Google AdMob diproses oleh Google terpisah dari data pengecekan (lihat bagian 9).</p>
+
+  <h2>4. Dengan siapa data dibagikan</h2>
+  <p>Permintaan pengecekan diteruskan langsung dari perangkat Anda ke
+  <strong>server Bapenda Sumatera Barat</strong> (<code>bapenda.sumbarprov.go.id</code>),
+  penyedia layanan resmi pemerintah provinsi. Pengembang tidak menerima, menyimpan, atau
+  membagikan data Anda kepada pihak lain. Kebijakan privasi server pemerintah berlaku untuk
+  pemrosesan di sisi mereka.
+
+  <h2>5. Keamanan</h2>
+  <ul>
+    <li>Semua komunikasi menggunakan <strong>HTTPS/TLS</strong>; lalu lintas HTTP (tanpa
+        enkripsi) diblokir oleh konfigurasi keamanan jaringan aplikasi.</li>
+    <li>Kepercayaan hanya diberikan pada sertifikat bawaan sistem (menolak sertifikat yang
+        dipasang pihak ketiga).</li>
+    <li>Input dibersihkan dan dibatasi panjangnya sebelum dikirim ke server.</li>
+    <li>Tanpa akun berarti tidak ada kredensial yang dapat bocor dari aplikasi ini.</li>
+  </ul>
+
+  <h2>6. Retensi &amp; penghapusan</h2>
+  <p>Data yang Anda ketik tidak disimpan pengembang. Riwayat lokal dapat Anda hapus kapan
+  saja dari halaman Riwayat (hapus per entri atau hapus semua). Menghapus aplikasi juga
+  menghapus seluruh riwayat lokal, karena data hanya ada di perangkat Anda.</p>
+
+  <h2>7. Anak-anak</h2>
+  <p>Aplikasi ini ditujukan untuk umum dan tidak mengumpulkan data pribadi apa pun, termasuk
+  dari anak-anak di bawah 13 tahun.</p>
+
+  <h2>8. Izin aplikasi</h2>
+  <ul>
+    <li><code>INTERNET</code> — menghubungi server Bapenda untuk pengecekan dan memuat iklan.</li>
+    <li><code>ACCESS_NETWORK_STATE</code> — menampilkan status koneksi; juga dibutuhkan SDK iklan.</li>
+    <li><code>AD_ID</code> — izin standar yang dibutuhkan Google AdMob di Android 12+ untuk iklan.</li>
+  </ul>
+  <p>Tidak ada izin lain: tanpa lokasi, kontak, kamera, mikrofon, penyimpanan, atau telepon.</p>
+
+  <h2>9. Iklan (Google AdMob)</h2>
+  <p>Aplikasi ini menggunakan <strong>Google AdMob</strong> untuk iklan banner dan interstitial.
+  AdMob mungkin memproses <em>advertising ID</em> perangkat dan data telemetri iklan
+  (mis. durasi tayang, klik) untuk layanan iklan dan agregasi. Pengembang aplikasi
+  <strong>tidak menerima</strong> data ini dan tidak menargetkan iklan berdasarkan produk
+  pencarian apa pun. Pengguna bisa menonaktifkan personalisasi iklan melalui
+  Pengaturan Google &rarr; Iklan di perangkat Android. Detail resmi:
+  <em>google.com/policies/technologies/ads</em>.</p>
+
+  <h2>10. Perubahan kebijakan</h2>
+  <p>Bila ada perubahan, versi kebijakan yang diperbarui akan dipublikasikan pada halaman ini
+  beserta tanggal berlakunya. Perubahan materiil (misalnya penambahan jenis data yang diproses)
+  akan dijelaskan secara jelas sebelum berlaku.</p>
+
+  <h2>11. Kontak</h2>
+  <p>Pertanyaan tentang privasi dapat dikirim ke:
+  <strong>iipnurafifah@gmail.com</strong> (pengembang: <strong>iipnurafifah</strong>).
+  Sertakan nama paket <code>id.iipnurafifah.cekpajaksumaterabarat</code> agar dapat
+  kami identifikasi dengan cepat.</p>
+
+  <footer>
+    © 2026 iipnurafifah · Cek Pajak Kendaraan Sumbar<br>
+    Dokumen ini juga tersedia di dalam aplikasi (menu <em>Tentang &amp; Privasi</em>).
+  </footer>
+</article>
+</main>
+</body>
+</html>
